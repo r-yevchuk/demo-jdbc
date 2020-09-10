@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker run -d \
+    --name db \
+    -e POSTGRES_USER=appUser \
+    -e POSTGRES_PASSWORD=password \
+    -e POSTGRES_DB=jdbc \
+    -p 5432:5432 \
+    postgres
